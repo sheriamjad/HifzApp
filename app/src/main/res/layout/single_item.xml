@@ -8,14 +8,12 @@
     android:fillViewport="true"
     android:id="@+id/single_item"
     >
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="4dp"
         android:fillViewport="true">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="296dp"
@@ -68,7 +66,6 @@
                 app:layout_constraintBaseline_toBaselineOf="@+id/TVStudent"
                 app:layout_constraintEnd_toStartOf="@+id/TVStudent"
                 app:layout_constraintStart_toStartOf="parent" />
-
             <TextView
                 android:id="@+id/TVStudent"
                 android:layout_width="0dp"
