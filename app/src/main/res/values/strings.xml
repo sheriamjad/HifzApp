@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SalahTracker</string>
+    <string-array name="SalahName">
+        <item>Fajer</item>
+        <item>Zohar</item>
+        <item>Maghrib</item>
+        <item>Isha</item>
+        <item>Tahajud</item>
+    </string-array>
+
+</resources>

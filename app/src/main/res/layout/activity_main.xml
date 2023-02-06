@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleNafal2"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="38dp"
+        android:text="Manzil: "
+        app:layout_constraintBottom_toTopOf="@+id/selectDateLabel"
+        app:layout_constraintEnd_toStartOf="@+id/txtManzil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNafal" />
+
+    <EditText
+        android:id="@+id/txtManzil"
+        android:layout_width="217dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dateDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleNafal2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSabki"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtStName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSabak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtSabak"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSabki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rakatTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtStName"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtSabki"
+        android:layout_width="212dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtManzil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleNafal"
+        app:layout_constraintTop_toBottomOf="@+id/txtSabak"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/dateDisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="Select Date"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectDateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/txtManzil" />
+
+    <TextView
+        android:id="@+id/titleNafal"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="38dp"
+        android:text="Sabki:"
+        app:layout_constraintBottom_toTopOf="@+id/titleNafal2"
+        app:layout_constraintEnd_toStartOf="@+id/txtSabki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rakatTitle" />
+
+    <TextView
+        android:id="@+id/rakatTitle"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="37dp"
+        android:text="Sabak:"
+        app:layout_constraintBottom_toTopOf="@+id/titleNafal"
+        app:layout_constraintEnd_toStartOf="@+id/txtSabak"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/selectDateLabel"
+        android:layout_width="58dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="110dp"
+        android:text="Select Date"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddData"
+        app:layout_constraintEnd_toStartOf="@+id/dateDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNafal2" />
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="138dp"
+        android:text="Add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectDateLabel" />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Show Data"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/gitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateDisplay" />
+
+    <Button
+        android:id="@+id/gitButton"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:text="GitHub"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisplay" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="47dp"
+        android:text="Name:"
+        app:layout_constraintBottom_toTopOf="@+id/rakatTitle"
+        app:layout_constraintEnd_toStartOf="@+id/txtStName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

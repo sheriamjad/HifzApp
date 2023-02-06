@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_update">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Student"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/etSabak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSabak"
+        android:layout_width="259dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Sabak"
+        android:inputType="textPersonName"
+
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etSabki"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Sabki"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/etManzil"
+        app:layout_constraintStart_toStartOf="@+id/etSabak"
+        app:layout_constraintTop_toBottomOf="@+id/etSabak" />
+
+    <EditText
+        android:id="@+id/etManzil"
+        android:layout_width="255dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Manzil"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/etSabki"
+        app:layout_constraintTop_toBottomOf="@+id/etSabki" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="110dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="218dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="26dp"
+        android:text="Delete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnUpdate"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="54dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="413dp"
+        android:hint="Date"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
